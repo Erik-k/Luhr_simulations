@@ -63,6 +63,7 @@ ylabel('dB/dt in teslas/second');
 
 subplot(3,2,1)
 plot( B_measurements )
+title('Corresponding B-field measurements');
 hold off
 
 % Resulting current density estimation:
@@ -100,6 +101,7 @@ ylabel('dB/dt in teslas/second');
 
 subplot(3,2,3)
 plot( B_measurements_multi )
+title('B-field measurements for the multiple-pole scenario');
 hold off
 
 %%
@@ -136,6 +138,7 @@ ylabel('dB/dt in teslas/second');
 
 subplot(3,2,5)
 plot( B_measurements_angled )
+title('B-field measurements for the angled scenario');
 hold off
 
 
