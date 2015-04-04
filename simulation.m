@@ -143,19 +143,20 @@ hold off
 
 
 %% Testing. Sanity checks! x_x
-clc
+
 % Try to get the parts of a vector to sum correctly. How much needs to be
 % done in main, and how much done inside the function? 
 % Answer: Loop through each distance increment in main, and pass it as a
 % scalar, but loop through each pole inside the function and sum their
 % effects before passing the result back out AS A SCALAR. Then append these
 % scalars into the B result vector one by one using for loop indexing.
-myvec = [1 2 3 4 5];
-poles = 3;
-results = zeros(1, length(myvec));
-for i = 1:length(myvec)
-    results(i) = test_func(poles, myvec(i))
-end
+
+%myvec = [1 2 3 4 5];
+%poles = 3;
+%results = zeros(1, length(myvec));
+%for i = 1:length(myvec)
+%    results(i) = test_func(poles, myvec(i))
+%end
 
 
 %% Future steps:
