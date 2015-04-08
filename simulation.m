@@ -11,6 +11,7 @@
 
 clc
 clear all
+close all; %remove figure windows
 
 % CONSTANTS
 u = 4*pi*(10^-7);                        % magnetic permability constant N/A^2 or T*m/A
@@ -63,7 +64,9 @@ ylabel('dB/dt in teslas/second');
 
 subplot(3,2,1)
 plot( B_measurements )
-title('Corresponding B-field measurements');
+title('B-field measurements for crossing a single pole');
+xlabel('Distance from start in 100''s m');
+ylabel('B-field in Teslas');
 hold off
 
 % Resulting current density estimation:
